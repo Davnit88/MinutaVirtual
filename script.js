@@ -33,11 +33,11 @@ if ('serviceWorker'in navigator){
     }
   }
 const bannerInstall = document.querySelector('inst');
-bannerInstall.addEventListener('click', async()=>{
+bannerInstall.addEventListener('click', async () => {
     if (deferredPromt) {
         deferredPromt.prompt();
-        const response =await deferredPromt.userChoice;
-        if (response.outcome === 'dismisse'){
+        const response = await deferredPromt.userChoice;
+        if (response.outcome === 'dismissed'){
             console.error('elusario cancelo la instalacion');
         }
     }
