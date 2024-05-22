@@ -18,3 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
         textInput.value = textoGuardado;
     }
 });
+// Cuando se cargue todo nuestro DOM
+window.addEventListener('load', async () => {
+ 
+if ('serviceWorker'in navigator){
+    const response =await navigator.serviceWorker.register('sw.js');
+    if (response) {
+        console.info('service worker registrado')
+    }
+  }
+
+  });

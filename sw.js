@@ -5,7 +5,7 @@ self.addEventListener('install', event => {
                 '/index.html',
                 '/script.js',
                 '/styles.css',
-                '/icon.png'
+                '/icon-144.png'
             ]);
         })
     );
@@ -18,3 +18,4 @@ self.addEventListener('fetch', event => {
         })
     );
 });
+console.log("ya esta");

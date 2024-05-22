@@ -1,8 +1,11 @@
 {
     "name": "Minuta Virtual",
     "short_name": "Mi PWA",
+    "description": "Aplicacion para realizar reportes",
     "start_url": "/index.html",
+    "orientation":"portrait",
     "display": "standalone",
+    "scope" :".",
     "background_color": "#ffffff",
     "theme_color": "#2196F3",
     "icons": [
